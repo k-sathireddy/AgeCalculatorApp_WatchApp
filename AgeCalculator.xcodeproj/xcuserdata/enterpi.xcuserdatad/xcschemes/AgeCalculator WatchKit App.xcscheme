@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0800"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E64B720D1DC065B6009B8676"
+               BuildableName = "AgeCalculator WatchKit App.app"
+               BlueprintName = "AgeCalculator WatchKit App"
+               ReferencedContainer = "container:AgeCalculator.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E64B71DA1DC06519009B8676"
+               BuildableName = "AgeCalculator.app"
+               BlueprintName = "AgeCalculator"
+               ReferencedContainer = "container:AgeCalculator.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E64B720D1DC065B6009B8676"
+            BuildableName = "AgeCalculator WatchKit App.app"
+            BlueprintName = "AgeCalculator WatchKit App"
+            ReferencedContainer = "container:AgeCalculator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/AgeCalculator">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E64B720D1DC065B6009B8676"
+            BuildableName = "AgeCalculator WatchKit App.app"
+            BlueprintName = "AgeCalculator WatchKit App"
+            ReferencedContainer = "container:AgeCalculator.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E64B720D1DC065B6009B8676"
+            BuildableName = "AgeCalculator WatchKit App.app"
+            BlueprintName = "AgeCalculator WatchKit App"
+            ReferencedContainer = "container:AgeCalculator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/AgeCalculator">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E64B720D1DC065B6009B8676"
+            BuildableName = "AgeCalculator WatchKit App.app"
+            BlueprintName = "AgeCalculator WatchKit App"
+            ReferencedContainer = "container:AgeCalculator.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E64B720D1DC065B6009B8676"
+            BuildableName = "AgeCalculator WatchKit App.app"
+            BlueprintName = "AgeCalculator WatchKit App"
+            ReferencedContainer = "container:AgeCalculator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

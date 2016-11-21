@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AgeCalculator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Today's Date:" textAlignment="center" id="Je9-kI-Yke">
+                            <color key="textColor" red="0.94117647059999998" green="0.34509803919999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <dateLabel width="1" alignment="left" textAlignment="center" format="MMM/dd/yyyy" id="OOV-dS-GoA">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </dateLabel>
+                        <label width="1" alignment="left" text="Date of Birth:" textAlignment="center" id="FE7-v3-SXA">
+                            <color key="textColor" red="0.94117647059999998" green="0.34509803919999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label width="1" alignment="left" text="Tap here to choose" textAlignment="center" id="aSB-qc-cas">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="H9Z-RV-lPX">
+                                    <connections>
+                                        <action selector="dateOfBirthLabelTapped:" destination="AgC-eL-Hgc" id="eGD-jF-rc0"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <group width="1" alignment="left" id="urA-Uh-Wui">
+                            <items>
+                                <button width="0.5" alignment="left" title="Calculate" id="5z1-ps-Kjb">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.45615748360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="calculateButtonTapped" destination="AgC-eL-Hgc" id="Nxh-R8-w52"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Clear" id="UtU-Xo-w4H">
+                                    <color key="backgroundColor" red="0.60672951336315795" green="0.33201724150263157" blue="0.34111368438157896" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="clearButtonTapped" destination="AgC-eL-Hgc" id="Ge8-2v-h1Q"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Your age as of today is:" textAlignment="center" id="N7h-N0-WTa">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <label width="1" alignment="left" text="0 years" textAlignment="center" id="pgg-Ec-tbX">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label width="1" alignment="left" text="0 months" textAlignment="center" id="NV2-Di-owd">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label width="1" alignment="left" text="0 days" textAlignment="center" id="ISL-mx-Dsa">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="ageInDaysLabel" destination="ISL-mx-Dsa" id="Msv-xX-BPK"/>
+                        <outlet property="ageInMonthsLabel" destination="NV2-Di-owd" id="Ly2-nd-d6O"/>
+                        <outlet property="ageInYearsLabel" destination="pgg-Ec-tbX" id="QJ3-GV-2d4"/>
+                        <outlet property="calculateButtonTapped" destination="5z1-ps-Kjb" id="MqW-nx-4Ts"/>
+                        <outlet property="dateLabel" destination="OOV-dS-GoA" id="itQ-SY-15i"/>
+                        <outlet property="dateOfBirthLabel" destination="aSB-qc-cas" id="mKL-Nc-xoN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-53" y="84"/>
+        </scene>
+        <!--DatePickerInterfaceControllerIdentifier-->
+        <scene sceneID="JFb-yU-SCt">
+            <objects>
+                <controller identifier="DatePickerInterfaceControllerIdentifier" id="HcF-b4-XAt" customClass="DatePickerInterfaceController" customModule="AgeCalculator_WatchKit_App_Extension">
+                    <items>
+                        <group width="1" height="98" alignment="left" spacing="1" id="tnh-4s-1LA">
+                            <items>
+                                <picker width="0.33700000000000002" height="1" alignment="left" focusStyle="sequence" id="KsX-f4-uoq">
+                                    <connections>
+                                        <action selector="monthPickerItemChanged:" destination="HcF-b4-XAt" id="TbB-n7-qMH"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.26300000000000001" height="1" alignment="left" focusStyle="sequence" id="3ca-6H-jrq">
+                                    <connections>
+                                        <action selector="dayPickerItemChanged:" destination="HcF-b4-XAt" id="nTj-ez-73F"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.40000000000000002" height="1" alignment="left" focusStyle="sequence" id="rqh-DP-ZH9">
+                                    <connections>
+                                        <action selector="yearPickerItemChanged:" destination="HcF-b4-XAt" id="rwO-E0-GnN"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="1g1-3C-Gxe">
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <separator alignment="left" id="880-L4-MOp">
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <button width="1" alignment="left" title="OK" id="w55-KQ-rNQ">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.45615748360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="okBtnTapped" destination="HcF-b4-XAt" id="qbo-Pj-hdq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="dayPicker" destination="3ca-6H-jrq" id="ENP-k1-Co1"/>
+                        <outlet property="monthPicker" destination="KsX-f4-uoq" id="Y21-Lu-8l9"/>
+                        <outlet property="yearPicker" destination="rqh-DP-ZH9" id="u8M-pU-h0f"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="163" y="58"/>
+        </scene>
+    </scenes>
+</document>

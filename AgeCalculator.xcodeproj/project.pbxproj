@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E64B71DF1DC06519009B8676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B71DE1DC06519009B8676 /* AppDelegate.swift */; };
+		E64B71E11DC06519009B8676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B71E01DC06519009B8676 /* ViewController.swift */; };
+		E64B71E41DC06519009B8676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64B71E21DC06519009B8676 /* Main.storyboard */; };
+		E64B71E61DC06519009B8676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64B71E51DC06519009B8676 /* Assets.xcassets */; };
+		E64B71E91DC06519009B8676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64B71E71DC06519009B8676 /* LaunchScreen.storyboard */; };
+		E64B71F41DC06519009B8676 /* AgeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B71F31DC06519009B8676 /* AgeCalculatorTests.swift */; };
+		E64B71FF1DC06519009B8676 /* AgeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B71FE1DC06519009B8676 /* AgeCalculatorUITests.swift */; };
+		E64B72121DC065B6009B8676 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64B72101DC065B6009B8676 /* Interface.storyboard */; };
+		E64B72141DC065B6009B8676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64B72131DC065B6009B8676 /* Assets.xcassets */; };
+		E64B721B1DC065B7009B8676 /* AgeCalculator WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E64B721A1DC065B7009B8676 /* AgeCalculator WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E64B72201DC065B7009B8676 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B721F1DC065B7009B8676 /* InterfaceController.swift */; };
+		E64B72221DC065B7009B8676 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B72211DC065B7009B8676 /* ExtensionDelegate.swift */; };
+		E64B72241DC065B7009B8676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64B72231DC065B7009B8676 /* Assets.xcassets */; };
+		E64B72281DC065B7009B8676 /* AgeCalculator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E64B720E1DC065B6009B8676 /* AgeCalculator WatchKit App.app */; };
+		E64B72321DC070E0009B8676 /* DatePickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B72311DC070E0009B8676 /* DatePickerInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E64B71F01DC06519009B8676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E64B71D31DC06519009B8676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64B71DA1DC06519009B8676;
+			remoteInfo = AgeCalculator;
+		};
+		E64B71FB1DC06519009B8676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E64B71D31DC06519009B8676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64B71DA1DC06519009B8676;
+			remoteInfo = AgeCalculator;
+		};
+		E64B721C1DC065B7009B8676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E64B71D31DC06519009B8676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64B72191DC065B7009B8676;
+			remoteInfo = "AgeCalculator WatchKit App Extension";
+		};
+		E64B72261DC065B7009B8676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E64B71D31DC06519009B8676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64B720D1DC065B6009B8676;
+			remoteInfo = "AgeCalculator WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E64B722C1DC065B7009B8676 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E64B721B1DC065B7009B8676 /* AgeCalculator WatchKit App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B72301DC065B7009B8676 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E64B72281DC065B7009B8676 /* AgeCalculator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E64B71DB1DC06519009B8676 /* AgeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64B71DE1DC06519009B8676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E64B71E01DC06519009B8676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E64B71E31DC06519009B8676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E64B71E51DC06519009B8676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E64B71E81DC06519009B8676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E64B71EA1DC06519009B8676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B71EF1DC06519009B8676 /* AgeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64B71F31DC06519009B8676 /* AgeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculatorTests.swift; sourceTree = "<group>"; };
+		E64B71F51DC06519009B8676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B71FA1DC06519009B8676 /* AgeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64B71FE1DC06519009B8676 /* AgeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculatorUITests.swift; sourceTree = "<group>"; };
+		E64B72001DC06519009B8676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B720E1DC065B6009B8676 /* AgeCalculator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AgeCalculator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64B72111DC065B6009B8676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E64B72131DC065B6009B8676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E64B72151DC065B6009B8676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B721A1DC065B7009B8676 /* AgeCalculator WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AgeCalculator WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64B721F1DC065B7009B8676 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E64B72211DC065B7009B8676 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E64B72231DC065B7009B8676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E64B72251DC065B7009B8676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B72311DC070E0009B8676 /* DatePickerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E64B71D81DC06519009B8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B71EC1DC06519009B8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B71F71DC06519009B8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B72171DC065B7009B8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E64B71D21DC06519009B8676 = {
+			isa = PBXGroup;
+			children = (
+				E64B71DD1DC06519009B8676 /* AgeCalculator */,
+				E64B71F21DC06519009B8676 /* AgeCalculatorTests */,
+				E64B71FD1DC06519009B8676 /* AgeCalculatorUITests */,
+				E64B720F1DC065B6009B8676 /* AgeCalculator WatchKit App */,
+				E64B721E1DC065B7009B8676 /* AgeCalculator WatchKit App Extension */,
+				E64B71DC1DC06519009B8676 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E64B71DC1DC06519009B8676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E64B71DB1DC06519009B8676 /* AgeCalculator.app */,
+				E64B71EF1DC06519009B8676 /* AgeCalculatorTests.xctest */,
+				E64B71FA1DC06519009B8676 /* AgeCalculatorUITests.xctest */,
+				E64B720E1DC065B6009B8676 /* AgeCalculator WatchKit App.app */,
+				E64B721A1DC065B7009B8676 /* AgeCalculator WatchKit App Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E64B71DD1DC06519009B8676 /* AgeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				E64B71DE1DC06519009B8676 /* AppDelegate.swift */,
+				E64B71E01DC06519009B8676 /* ViewController.swift */,
+				E64B71E21DC06519009B8676 /* Main.storyboard */,
+				E64B71E51DC06519009B8676 /* Assets.xcassets */,
+				E64B71E71DC06519009B8676 /* LaunchScreen.storyboard */,
+				E64B71EA1DC06519009B8676 /* Info.plist */,
+			);
+			path = AgeCalculator;
+			sourceTree = "<group>";
+		};
+		E64B71F21DC06519009B8676 /* AgeCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E64B71F31DC06519009B8676 /* AgeCalculatorTests.swift */,
+				E64B71F51DC06519009B8676 /* Info.plist */,
+			);
+			path = AgeCalculatorTests;
+			sourceTree = "<group>";
+		};
+		E64B71FD1DC06519009B8676 /* AgeCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E64B71FE1DC06519009B8676 /* AgeCalculatorUITests.swift */,
+				E64B72001DC06519009B8676 /* Info.plist */,
+			);
+			path = AgeCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		E64B720F1DC065B6009B8676 /* AgeCalculator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E64B72101DC065B6009B8676 /* Interface.storyboard */,
+				E64B72131DC065B6009B8676 /* Assets.xcassets */,
+				E64B72151DC065B6009B8676 /* Info.plist */,
+			);
+			path = "AgeCalculator WatchKit App";
+			sourceTree = "<group>";
+		};
+		E64B721E1DC065B7009B8676 /* AgeCalculator WatchKit App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E64B721F1DC065B7009B8676 /* InterfaceController.swift */,
+				E64B72311DC070E0009B8676 /* DatePickerInterfaceController.swift */,
+				E64B72211DC065B7009B8676 /* ExtensionDelegate.swift */,
+				E64B72231DC065B7009B8676 /* Assets.xcassets */,
+				E64B72251DC065B7009B8676 /* Info.plist */,
+			);
+			path = "AgeCalculator WatchKit App Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E64B71DA1DC06519009B8676 /* AgeCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64B72031DC06519009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculator" */;
+			buildPhases = (
+				E64B71D71DC06519009B8676 /* Sources */,
+				E64B71D81DC06519009B8676 /* Frameworks */,
+				E64B71D91DC06519009B8676 /* Resources */,
+				E64B72301DC065B7009B8676 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E64B72271DC065B7009B8676 /* PBXTargetDependency */,
+			);
+			name = AgeCalculator;
+			productName = AgeCalculator;
+			productReference = E64B71DB1DC06519009B8676 /* AgeCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E64B71EE1DC06519009B8676 /* AgeCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64B72061DC06519009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculatorTests" */;
+			buildPhases = (
+				E64B71EB1DC06519009B8676 /* Sources */,
+				E64B71EC1DC06519009B8676 /* Frameworks */,
+				E64B71ED1DC06519009B8676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E64B71F11DC06519009B8676 /* PBXTargetDependency */,
+			);
+			name = AgeCalculatorTests;
+			productName = AgeCalculatorTests;
+			productReference = E64B71EF1DC06519009B8676 /* AgeCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E64B71F91DC06519009B8676 /* AgeCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64B72091DC06519009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculatorUITests" */;
+			buildPhases = (
+				E64B71F61DC06519009B8676 /* Sources */,
+				E64B71F71DC06519009B8676 /* Frameworks */,
+				E64B71F81DC06519009B8676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E64B71FC1DC06519009B8676 /* PBXTargetDependency */,
+			);
+			name = AgeCalculatorUITests;
+			productName = AgeCalculatorUITests;
+			productReference = E64B71FA1DC06519009B8676 /* AgeCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E64B720D1DC065B6009B8676 /* AgeCalculator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64B722D1DC065B7009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculator WatchKit App" */;
+			buildPhases = (
+				E64B720C1DC065B6009B8676 /* Resources */,
+				E64B722C1DC065B7009B8676 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E64B721D1DC065B7009B8676 /* PBXTargetDependency */,
+			);
+			name = "AgeCalculator WatchKit App";
+			productName = "AgeCalculator WatchKit App";
+			productReference = E64B720E1DC065B6009B8676 /* AgeCalculator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E64B72191DC065B7009B8676 /* AgeCalculator WatchKit App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64B72291DC065B7009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculator WatchKit App Extension" */;
+			buildPhases = (
+				E64B72161DC065B7009B8676 /* Sources */,
+				E64B72171DC065B7009B8676 /* Frameworks */,
+				E64B72181DC065B7009B8676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AgeCalculator WatchKit App Extension";
+			productName = "AgeCalculator WatchKit App Extension";
+			productReference = E64B721A1DC065B7009B8676 /* AgeCalculator WatchKit App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E64B71D31DC06519009B8676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = AppCoda;
+				TargetAttributes = {
+					E64B71DA1DC06519009B8676 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					E64B71EE1DC06519009B8676 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E64B71DA1DC06519009B8676;
+					};
+					E64B71F91DC06519009B8676 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E64B71DA1DC06519009B8676;
+					};
+					E64B720D1DC065B6009B8676 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					E64B72191DC065B7009B8676 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E64B71D61DC06519009B8676 /* Build configuration list for PBXProject "AgeCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E64B71D21DC06519009B8676;
+			productRefGroup = E64B71DC1DC06519009B8676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E64B71DA1DC06519009B8676 /* AgeCalculator */,
+				E64B71EE1DC06519009B8676 /* AgeCalculatorTests */,
+				E64B71F91DC06519009B8676 /* AgeCalculatorUITests */,
+				E64B720D1DC065B6009B8676 /* AgeCalculator WatchKit App */,
+				E64B72191DC065B7009B8676 /* AgeCalculator WatchKit App Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E64B71D91DC06519009B8676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B71E91DC06519009B8676 /* LaunchScreen.storyboard in Resources */,
+				E64B71E61DC06519009B8676 /* Assets.xcassets in Resources */,
+				E64B71E41DC06519009B8676 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B71ED1DC06519009B8676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B71F81DC06519009B8676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B720C1DC065B6009B8676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B72141DC065B6009B8676 /* Assets.xcassets in Resources */,
+				E64B72121DC065B6009B8676 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B72181DC065B7009B8676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B72241DC065B7009B8676 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E64B71D71DC06519009B8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B71E11DC06519009B8676 /* ViewController.swift in Sources */,
+				E64B71DF1DC06519009B8676 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B71EB1DC06519009B8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B71F41DC06519009B8676 /* AgeCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B71F61DC06519009B8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B71FF1DC06519009B8676 /* AgeCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B72161DC065B7009B8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64B72321DC070E0009B8676 /* DatePickerInterfaceController.swift in Sources */,
+				E64B72221DC065B7009B8676 /* ExtensionDelegate.swift in Sources */,
+				E64B72201DC065B7009B8676 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E64B71F11DC06519009B8676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E64B71DA1DC06519009B8676 /* AgeCalculator */;
+			targetProxy = E64B71F01DC06519009B8676 /* PBXContainerItemProxy */;
+		};
+		E64B71FC1DC06519009B8676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E64B71DA1DC06519009B8676 /* AgeCalculator */;
+			targetProxy = E64B71FB1DC06519009B8676 /* PBXContainerItemProxy */;
+		};
+		E64B721D1DC065B7009B8676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E64B72191DC065B7009B8676 /* AgeCalculator WatchKit App Extension */;
+			targetProxy = E64B721C1DC065B7009B8676 /* PBXContainerItemProxy */;
+		};
+		E64B72271DC065B7009B8676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E64B720D1DC065B6009B8676 /* AgeCalculator WatchKit App */;
+			targetProxy = E64B72261DC065B7009B8676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E64B71E21DC06519009B8676 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64B71E31DC06519009B8676 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E64B71E71DC06519009B8676 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64B71E81DC06519009B8676 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E64B72101DC065B6009B8676 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64B72111DC065B6009B8676 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E64B72011DC06519009B8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E64B72021DC06519009B8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E64B72041DC06519009B8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AgeCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E64B72051DC06519009B8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AgeCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E64B72071DC06519009B8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AgeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgeCalculator.app/AgeCalculator";
+			};
+			name = Debug;
+		};
+		E64B72081DC06519009B8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AgeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgeCalculator.app/AgeCalculator";
+			};
+			name = Release;
+		};
+		E64B720A1DC06519009B8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AgeCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AgeCalculator;
+			};
+			name = Debug;
+		};
+		E64B720B1DC06519009B8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AgeCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AgeCalculator;
+			};
+			name = Release;
+		};
+		E64B722A1DC065B7009B8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "AgeCalculator WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		E64B722B1DC065B7009B8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "AgeCalculator WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		E64B722E1DC065B7009B8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = AgeCalculator_WatchKit_App_Extension;
+				INFOPLIST_FILE = "AgeCalculator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		E64B722F1DC065B7009B8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = AgeCalculator_WatchKit_App_Extension;
+				INFOPLIST_FILE = "AgeCalculator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefalcons.AgeCalculator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E64B71D61DC06519009B8676 /* Build configuration list for PBXProject "AgeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64B72011DC06519009B8676 /* Debug */,
+				E64B72021DC06519009B8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64B72031DC06519009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64B72041DC06519009B8676 /* Debug */,
+				E64B72051DC06519009B8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64B72061DC06519009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64B72071DC06519009B8676 /* Debug */,
+				E64B72081DC06519009B8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64B72091DC06519009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64B720A1DC06519009B8676 /* Debug */,
+				E64B720B1DC06519009B8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64B72291DC065B7009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculator WatchKit App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64B722A1DC065B7009B8676 /* Debug */,
+				E64B722B1DC065B7009B8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64B722D1DC065B7009B8676 /* Build configuration list for PBXNativeTarget "AgeCalculator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64B722E1DC065B7009B8676 /* Debug */,
+				E64B722F1DC065B7009B8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E64B71D31DC06519009B8676 /* Project object */;
+}
